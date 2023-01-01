@@ -1,0 +1,5 @@
+Actions : ['Left', 'Up', 'Right', 'Up', 'Left', 'Left', 'Down', 'Right', 'Right', 'Up', 'Left', 'Down', 'Down', 'Left', 'Up', 'Up', 'Right', 'Right', 'Down', 'Left', 'Left', 'Up']
+Cost : 22
+Nodes Expanded : 4007
+Depth : 22
+Runtime : 1.2781736850738525

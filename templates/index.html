@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>8 SVU</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static "styles.css" %}">
+  </head>
+  <body>
+    <center>
+
+      <div id="curtains">
+        <center>
+          <div class="sk-cube-grid">
+            <div class="sk-cube sk-cube1"></div>
+            <div class="sk-cube sk-cube2"></div>
+            <div class="sk-cube sk-cube3"></div>
+            <div class="sk-cube sk-cube4"></div>
+            <div class="sk-cube sk-cube5"></div>
+            <div class="sk-cube sk-cube6"></div>
+            <div class="sk-cube sk-cube7"></div>
+            <div class="sk-cube sk-cube8"></div>
+            <div class="sk-cube sk-cube9"></div>
+          </div>
+        </center>
+      </div>
+
+      <br />
+      <h1>8 Puzzle Solver</h1>
+      <br /><br /><br />
+
+      <div id="sec1">
+          <label>Please enter numbers of initial state seperated by comma's,
+                  the goal state will be : 0,1,2,3,4,5,6,7,8
+          </label>
+          <br /><br />
+          <input id="in" type="text" name="grid" placeholder="Ex. 1,4,2,3,0,5,6,7,8">
+          <br /><br /><br />
+          <select id="sel">
+            <option value="astarM" selected>A* - Manhattan Distance</option>
+            <option value="astarE">A* - Euclidean Distance</option>
+            <option value="bfs">Breadth First Search</option>
+            <option value="dfs">Depth Fisrt Search</option>
+          </select>
+          <br /><br /><br /><br />
+          <button id="btn">Solve!</button>
+      </div>
+
+      <div id="sec2">
+        <label>Solving state: <span id="code"></span></label>
+        <br /><br /><br />
+        <table id="table">
+          <tr>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+          </tr>
+          <tr>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+          </tr>
+          <tr>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+          </tr>
+        </table>
+
+        <br /><br />
+        <button type="button" id="again">Try One More Time?</button>
+      </div>
+
+    </center>
+
+    <footer>
+      <center>
+        Sameer - Assia - Rawan - Haneen
+      </center>
+    </footer>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    {% load static %}
+    <script type="text/javascript" src="{% static "script.js" %}"></script>
+  </body>
+</html>
